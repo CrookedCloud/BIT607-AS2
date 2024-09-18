@@ -22,7 +22,7 @@ jobs:
       run: npm install -g lighthouse
 
     - name: Run Lighthouse
-      run: lighthouse http://127.0.0.1:5500/BIT607-AS2-SkyReekie-WebApplication/HTML/index.html --output json --output-path ./report.json
+      run: lighthouse https://crookedcloud.github.io/BIT607-AS2/ --output json --output-path ./report.json
 
     - name: Upload Lighthouse Report
       uses: actions/upload-artifact@v3
